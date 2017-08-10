@@ -1,6 +1,13 @@
 body {
   font-family: "Merriweather Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+  color: #fff;
+}
+
+header,
+footer, 
+section {
+   overflow: auto;
 }
 
 a,
@@ -40,7 +47,9 @@ a:focus {
 }
 
 .add-to-slack {
-  padding: 5px 10px;
+  padding: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
   background-color: #fff;
   border-radius: 6px;
   color: #000;
@@ -48,7 +57,7 @@ a:focus {
   margin-top: 3px;
   margin-left: 2%;
   border: 1px solid #ddd;
-  line-height: 1.4em;
+  line-height: 1.5em;
   font-size: 14px;
 }
 
@@ -63,3 +72,23 @@ a:focus {
   top: 4px;
   content: "";
 }
+
+.sec-presentation{
+  background-color: #00D5B3;
+}
+
+.art-presentation h1,p{
+ width: 35%;
+ padding-left: 5%;
+}
+
+.art-presentation p{
+ width: 40%;
+}
+
+.art-presentation h1{
+  font-weight: 100;
+  font-size: 2.2em;
+  text-align: justify;
+}
+
