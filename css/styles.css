@@ -1,5 +1,6 @@
 body {
   font-family: "Merriweather Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 a,
@@ -31,13 +32,11 @@ a:focus {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  font-weight: 100;
 }
 
 .main-nav ul li {
   padding: 0 10px;
   font-size: 14px;
-  font-weight: 100;
 }
 
 .add-to-slack {
