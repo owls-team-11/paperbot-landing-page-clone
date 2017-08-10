@@ -1,6 +1,12 @@
-<<<<<<< HEAD
 body{
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family:  sans-serif;
+  color: #fff;
+}
+
+header,
+footer, 
+section {
+   overflow: auto;
 }
 
 a, a:visited, a:active, a:focus{
@@ -39,7 +45,7 @@ a, a:visited, a:active, a:focus{
 }
 
 .add-to-slack{
-  padding: 5px;
+  padding: 4px;
   padding-right: 10px;
   padding-left: 10px;
   background-color: #fff;
@@ -49,11 +55,11 @@ a, a:visited, a:active, a:focus{
   margin-top: 3px;
   margin-left: 2%;
   border: 1px solid #ddd;
-  line-height: 1.4em;
+  line-height: 1.5em;
   font-size: 14px;
 }
 
-.add-to-slack::before{
+.main-nav .add-to-slack::before{
   background: url('../img/Slack_Icon.png');
   width: 23px;
   height: 23px;
@@ -64,3 +70,23 @@ a, a:visited, a:active, a:focus{
   top: 4px;
   content: "";
 }
+
+.sec-presentation{
+  background-color: #00D5B3;
+}
+
+.art-presentation h1,p{
+ width: 35%;
+ padding-left: 5%;
+}
+
+.art-presentation p{
+ width: 40%;
+}
+
+.art-presentation h1{
+  font-weight: 100;
+  font-size: 2.2em;
+  text-align: justify;
+}
+
