@@ -71,20 +71,23 @@ a:focus {
   content: "";
 }
 
-.sec-presentation{
+.sec-presentation {
   background-color: #00D5B3;
 }
 
-.art-presentation h1,p{
+.art-presentation h1,
+p {
  width: 35%;
  padding-left: 5%;
 }
 
-.art-presentation p{
+.art-presentation p {
  width: 40%;
+ font-size: 20px;
 }
 
-.art-presentation h1{
+.art-presentation h1 {
+  padding-top: 50px;
   font-weight: 100;
   font-size: 2.2em;
   text-align: justify;
