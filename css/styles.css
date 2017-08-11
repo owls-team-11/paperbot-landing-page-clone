@@ -82,14 +82,36 @@ p {
 }
 
 .art-presentation p {
- width: 40%;
- font-size: 20px;
+ width: 45%;
+ font-size: 22px;
+ font-weight: 300;
+ line-height: 1.6em;
 }
 
 .art-presentation h1 {
   padding-top: 50px;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 2.2em;
   text-align: justify;
+}
+
+.art-presentation .add-to-slack {
+  width: 230px;
+  padding: 5px 15px 5px 15px;
+  font-size: 1.7em;
+  font-weight: 400;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+
+.art-presentation .add-to-slack::before {
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 6px;
+  content: "";
 }
 
