@@ -99,15 +99,18 @@ p {
   color: #4c5155;
   font-size: 32px;
   font-weight: 400;
+  margin-bottom: 90px;
+  margin-top: 70px;
 }
 
 .client-img {
-  margin: 55px;
+  margin: 40px;
   max-height: 36px;
 }
 
 .client-img-sales {
-  margin: 55px;
+  margin: 40px;
+  margin-top: 35px;
   max-height: 65px;
 }
 
