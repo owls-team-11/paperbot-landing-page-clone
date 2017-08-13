@@ -73,6 +73,7 @@ a:focus {
   content: "";
 }
 
+
 .sec-presentation {
   height: 500px;
   background-color: #00D5B3;
@@ -111,6 +112,7 @@ p {
 .art-presentation h1 {
   padding-top: 20px;
   font-weight: 300;
+  padding-top: 50px;
   font-size: 2.2em;
   text-align: justify;
 }
@@ -135,3 +137,29 @@ p {
   content: "";
 }
 
+.text-center {
+  text-align: center;
+}
+
+.thousands-text {
+  color: #4c5155;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 90px;
+  margin-top: 70px;
+}
+
+.client-img {
+  margin: 40px;
+  max-height: 36px;
+}
+
+.client-img-sales {
+  margin: 27px 40px 40px 40px;
+  max-height: 65px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+}
