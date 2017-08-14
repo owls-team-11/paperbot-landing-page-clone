@@ -21,7 +21,7 @@ a:focus {
 .main-nav {
   border-top: 1px solid #ddd;
   background-color: #00D5B3;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: row;
   padding-top: 15px;
@@ -131,6 +131,10 @@ p {
   left: 0;
   top: 6px;
   content: "";
+}
+
+.client-list {
+  margin-top: 250px;
 }
 
 .text-center {
