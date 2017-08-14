@@ -25,10 +25,11 @@ a:focus {
   display: flex;
   flex-direction: row;
   padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 .nav-paperbot {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-family: sans-serif;
   padding-top: 15px;
   padding-left: 30px;
@@ -72,24 +73,62 @@ a:focus {
 }
 
 .sec-presentation {
+  height: 500px;
   background-color: #00D5B3;
+  background-image: url("../img/header-icons.01d079.png"), url("../img/macbook.619fe2_2.png");
+  background-position: top left, top right;
+  background-size: 56.2%, 50%;
+  background-repeat: no-repeat;
+}
+
+.sec-presentation::after {
+  background-color: #00D5B3;
+  content: '';
+  display: block;
+  height: 40%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(2.5deg);
+  transform-origin: 100%;
+  z-index: -1;
 }
 
 .art-presentation h1,
 p {
- width: 35%;
+ width: 35.5%;
  padding-left: 5%;
 }
 
 .art-presentation p {
- width: 40%;
- font-size: 20px;
+ width: 45%;
+ font-size: 22px;
+ font-weight: 300;
+ line-height: 1.6em;
 }
 
-
 .art-presentation h1 {
+  padding-top: 20px;
   font-weight: 300;
-  padding-top: 50px;
-  font-weight: 100;
   font-size: 2.2em;
+}
+
+.art-presentation .add-to-slack {
+  width: 230px;
+  padding: 5px 15px 5px 15px;
+  font-size: 1.7em;
+  font-weight: 400;
+  border-radius: 15px;
+  margin-left: 5%;
+}
+
+.art-presentation .add-to-slack::before {
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 6px;
+  content: "";
 }
