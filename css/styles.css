@@ -10,7 +10,6 @@ section {
    overflow: auto;
 }
 
-
 a,
 a:visited,
 a:active,
@@ -112,7 +111,6 @@ p {
   padding-top: 20px;
   font-weight: 300;
   font-size: 2.2em;
-  text-align: justify;
 }
 
 .art-presentation .add-to-slack {
@@ -134,4 +132,3 @@ p {
   top: 6px;
   content: "";
 }
-
