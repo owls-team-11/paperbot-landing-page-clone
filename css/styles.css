@@ -36,16 +36,13 @@ a:focus {
   width: 61.5%;
 }
 
-.main-nav,
-ul {
+.main-nav ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
 }
 
-.main-nav,
-ul,
-li {
+.main-nav ul li {
   padding: 0 10px;
   font-size: 14px;
 }
@@ -98,30 +95,26 @@ li {
   z-index: -1;
 }
 
-.art-presentation,
-h1,
+.art-presentation h1,
 p {
  width: 35.5%;
  padding-left: 5%;
 }
 
-.art-presentation,
-p {
+.art-presentation p {
  width: 45%;
  font-size: 22px;
  font-weight: 300;
  line-height: 1.6em;
 }
 
-.art-presentation,
-h1 {
+.art-presentation h1 {
   padding-top: 20px;
   font-weight: 300;
   font-size: 2.2em;
 }
 
-.art-presentation,
-.add-to-slack {
+.art-presentation .add-to-slack {
   width: 230px;
   padding: 5px 15px 5px 15px;
   font-size: 1.7em;
@@ -130,8 +123,7 @@ h1 {
   margin-left: 5%;
 }
 
-.art-presentation,
-.add-to-slack::before {
+.art-presentation .add-to-slack::before {
   width: 45px;
   height: 45px;
   background-size: cover;
