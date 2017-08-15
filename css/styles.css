@@ -36,13 +36,16 @@ a:focus {
   width: 61.5%;
 }
 
-.main-nav ul {
+.main-nav,
+ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
 }
 
-.main-nav ul li {
+.main-nav,
+ul,
+li {
   padding: 0 10px;
   font-size: 14px;
 }
@@ -75,7 +78,8 @@ a:focus {
 .sec-presentation {
   height: 500px;
   background-color: #00D5B3;
-  background-image: url("../img/header-icons.01d079.png"), url("../img/macbook.619fe2_2.png");
+  background-image: url("../img/header-icons.01d079.png"),
+  url("../img/macbook.619fe2_2.png");
   background-position: top left, top right;
   background-size: 56.2%, 50%;
   background-repeat: no-repeat;
@@ -83,7 +87,7 @@ a:focus {
 
 .sec-presentation::after {
   background-color: #00D5B3;
-  content: '';
+  content: "";
   display: block;
   height: 40%;
   left: 0;
@@ -94,26 +98,30 @@ a:focus {
   z-index: -1;
 }
 
-.art-presentation h1,
+.art-presentation,
+h1,
 p {
  width: 35.5%;
  padding-left: 5%;
 }
 
-.art-presentation p {
+.art-presentation,
+p {
  width: 45%;
  font-size: 22px;
  font-weight: 300;
  line-height: 1.6em;
 }
 
-.art-presentation h1 {
+.art-presentation,
+h1 {
   padding-top: 20px;
   font-weight: 300;
   font-size: 2.2em;
 }
 
-.art-presentation .add-to-slack {
+.art-presentation,
+.add-to-slack {
   width: 230px;
   padding: 5px 15px 5px 15px;
   font-size: 1.7em;
@@ -122,7 +130,8 @@ p {
   margin-left: 5%;
 }
 
-.art-presentation .add-to-slack::before {
+.art-presentation,
+.add-to-slack::before {
   width: 45px;
   height: 45px;
   background-size: cover;
