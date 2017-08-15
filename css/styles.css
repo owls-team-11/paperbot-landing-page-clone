@@ -26,7 +26,7 @@ a:focus {
   display: flex;
   flex-direction: row;
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .nav-paperbot {
@@ -78,7 +78,7 @@ a:focus {
   background-image: url("../img/header-icons.01d079.png"),
   url("../img/macbook.619fe2_2.png");
   background-position: top left, top right;
-  background-size: 56.2%, 50%;
+  background-size: 39.3%, contain;
   background-repeat: no-repeat;
 }
 
@@ -151,7 +151,7 @@ p {
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 90px;
-  margin-top: 70px;
+  margin-top: 170px;
 }
 
 .client-img {
