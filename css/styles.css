@@ -29,21 +29,20 @@ a:focus {
 }
 
 .nav-paperbot {
-  font-size: 1.4em;
-  font-family: sans-serif;
   padding-top: 15px;
   padding-left: 30px;
-  width: 61.5%;
+  width: 73.3%;
 }
 
 .main-nav ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  margin-right: -0.7%;
 }
 
 .main-nav ul li {
-  padding: 0 10px;
+  padding: 0 14px;
   font-size: 14px;
 }
 
@@ -54,7 +53,7 @@ a:focus {
   color: #393a3f;
   height: 50%;
   margin-top: 3px;
-  margin-left: 2%;
+  margin-left: 1.8%;
   line-height: 2;
   border: 1px solid #ddd;
   font-size: 14px;
