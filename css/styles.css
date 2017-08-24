@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   font-family: "Merriweather Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -8,21 +9,122 @@ body {
 header,
 footer,
 section {
-   overflow: auto;
+   overflow-y: hidden;
 }
 
 a,
 a:visited,
 a:active,
-a:focus {
+a:focus,
+a:hover {
   color: #fff;
   text-decoration: none;
 }
 
+.wrapper {
+  height: 101vh;
+}
+
 @media screen and (max-width: 480px) {
   .ad {
-
+    display: flex;
+    height: 3.75em;
+    justify-content: center;
   }
+
+  .ad {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .ad a {
+    line-height: 3.75em;
+  }
+
+  .ad p {
+    color: #4c5155;
+    display: inline-block;
+    font-size: 0.75em;
+    margin: 0;
+  }
+
+  .ad span {
+    color: #21cdb2;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-decoration: #21cdb2 solid underline;
+  }
+
+  .ad span:hover {
+    text-decoration: none;
+  }
+
+  .navbar {
+    background-color: #21cdb2;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  .paperbot-logo {
+    padding: 15px 10px;
+  }
+
+  .navbar-toggle {
+    background-color: transparent;
+    border-width: 0;
+    margin-right: 15px;
+  }
+
+  .navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+  }
+
+  .icon-bar {
+    align-self: flex-end;
+    background-color: #fff;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  .description {
+    line-height: 1.42857;
+    min-height: 21.25em;
+    background-color: #21cdb2;
+    padding-bottom: 20%;
+    background-image: url("../img/header-icons.01d079.png");
+    background-position-y: 120px;
+    background-repeat: no-repeat;
+  }
+
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .headline {
+      text-align: center;
+      padding-top: 3em;
+      max-width: 100%;
+    }
+
+    .description h1 {
+      font-size: 1.75em;
+      font-weight: 300;
+      line-height: 1.3;
+      margin: 0.67em 0;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+    }
+
+    .description p {
+      font-size: 1.125em;
+      margin: 12px 0 32px;
+      opacity: .8;
+    }
 
 }
 
