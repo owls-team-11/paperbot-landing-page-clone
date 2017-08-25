@@ -9,7 +9,7 @@ body {
 header,
 footer,
 section {
-   overflow-y: hidden;
+   /* overflow-y: hidden; */
 }
 
 a,
@@ -22,7 +22,7 @@ a:hover {
 }
 
 .wrapper {
-  height: 101vh;
+  height: 300vh;
 }
 
 @media screen and (max-width: 480px) {
@@ -142,6 +142,30 @@ a:hover {
   .img-macbook {
     margin-top: 35px;
     max-width: 100%;
+  }
+
+  .client-list {
+    margin-top: 20px;
+  }
+
+  .thousands-text {
+    color: #4c5155;
+    font-size: 1.25em;
+    font-weight: 400;
+    /* margin-bottom: 90px; */
+    /* margin-top: 170px; */
+    text-align: center;
+  }
+
+  .client-img {
+    margin: 25px;
+    max-height: 36px;
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
   }
 
 }
