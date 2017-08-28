@@ -13,12 +13,11 @@ a:visited,
 a:active,
 a:focus,
 a:hover {
-  color: #fff;
   text-decoration: none;
 }
 
 .wrapper {
-  height: 300vh;
+  height: 500vh;
 }
 
 /* max 480px */
@@ -167,7 +166,7 @@ a:hover {
 
   .client-img {
     max-height: 36px;
-    max-width: 50%;
+    max-width: 46%;
   }
 
   /* How it works */
@@ -222,9 +221,65 @@ a:hover {
     transform: skewY(2.65deg);
     transform-origin: 100%;
     margin-top: -5px;
+    margin-bottom: 115px;
   }
 
+  /* Testimonials */
 
+  .container-testimonials {
+    padding: 0 10px;
+  }
+
+  .testimonials {
+    margin-bottom: 6.25em;
+  }
+
+  .image-testimonial {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .text-testimonial {
+    text-align: center;
+  }
+
+  .text-testimonial h3 {
+    color: #4c5155;
+    font-size: .875em;
+    font-weight: 700;
+    margin: 1em 0 1.125em;
+  }
+
+  .text-testimonial p {
+    color: #8d9499;
+    margin: 0 auto 10px;
+    line-height: 1.5625em;
+  }
+
+  .link-learn-more {
+    color: #21cdb2;
+    background-color: transparent;
+  }
+
+  .link-learn-more:hover {
+    opacity: .5;
+  }
+
+  .iphone {
+    display: block;
+    width: 5em;
+    margin: 0 auto 50px;
+  }
+
+  .links {
+    display: block;
+    height: 2.5em;
+    margin: auto;
+  }
+
+  .ios {
+    margin-bottom: 22px;
+  }
 
 }
 
