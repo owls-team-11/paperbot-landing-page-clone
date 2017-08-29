@@ -296,7 +296,7 @@ a:hover {
 
   .product-features-container {
     padding: 0 10px;
-    margin: 0 -10px;
+    /* margin: 0 -10px; */
   }
 
   .feature {
@@ -327,7 +327,7 @@ a:hover {
     color: #8d9499;
     font-size: 16px;
     line-height: 1.56;
-    margin: 0 0 10px;
+    margin: 0 0 8px;
   }
 
 }
