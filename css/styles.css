@@ -86,7 +86,7 @@ a:hover {
   line-height: 1.42857;
   min-height: 21.25em;
   background-color: #21cdb2;
-  padding-bottom: 4%;
+  padding-bottom: 0%;
   background-image: url("../img/header-icons.01d079.png");
   background-position-y: 120px;
   background-repeat: no-repeat;
@@ -94,11 +94,16 @@ a:hover {
   flex-direction: column;
 }
 
-.skewer {
+.description::after {
+  content: "";
   background-color: #21cdb2;
+  display: block;
   height: 37px;
   transform: skewY(2.65deg);
-  transform-origin: 100%;
+  transform-origin: 0%;
+  z-index: -100;
+  position: relative;
+  top: 0px;
 }
 
 .container {
@@ -139,7 +144,7 @@ a:hover {
 /* Client list */
 
 .client-list {
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 .thousands-text {
@@ -163,17 +168,24 @@ a:hover {
 
 /* How it works */
 
-.skewer-how-top {
+.how-it-works::before {
   background-color: #f0f3f5;
+  content: "";
+  display: block;
   height: 37px;
+  width: 100%;
   transform: skewY(2.65deg);
-  transform-origin: 100%;
-  margin-top: 165px;
+  transform-origin: 0%;
+  z-index: -100;
+  position: relative;
+  top: -37px;
 }
 
 .how-it-works {
   color: #4c5155;
   background-color: #f0f3f5;
+  margin-top: 165px;
+  margin-bottom: 115px;
 }
 
 .how-it-works h2 {
@@ -207,13 +219,17 @@ li img {
   vertical-align: middle;
 }
 
-.skewer-how-bottom {
+.how-it-works::after {
   background-color: #f0f3f5;
+  content: "";
+  display: block;
   height: 37px;
+  width: 100%;
   transform: skewY(2.65deg);
-  transform-origin: 100%;
-  margin-top: -5px;
-  margin-bottom: 115px;
+  transform-origin: 0%;
+  z-index: -100;
+  position: relative;
+  top: 0px;
 }
 
 /* Testimonials */
@@ -328,11 +344,17 @@ li img {
   margin: 7.5em 0;
 }
 
-.skewer-miss-top {
+.never-miss::before {
   background-color: #7a7a7a;
+  content: "";
+  display: block;
   height: 37px;
+  width: 100%;
   transform: skewY(2.65deg);
-  transform-origin: 100%;
+  transform-origin: 0%;
+  z-index: -100;
+  position: relative;
+  top: -23px;
 }
 
 .call-to-action {
@@ -355,11 +377,17 @@ li img {
   line-height: 1.42857;
 }
 
-.skewer-miss-bottom {
+.never-miss::after {
   background-color: #7a7a7a;
+  content: "";
+  display: block;
   height: 37px;
+  width: 100%;
   transform: skewY(2.65deg);
-  transform-origin: 100%;
+  transform-origin: 0%;
+  z-index: -100;
+  position: relative;
+  top: -37px;
 }
 
 /* Footer */
