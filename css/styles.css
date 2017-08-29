@@ -16,10 +16,6 @@ a:hover {
   text-decoration: none;
 }
 
-.wrapper {
-  height: 700vh;
-}
-
 /* max 480px */
 
 @media screen and (max-width: 480px) {
@@ -419,6 +415,39 @@ a:hover {
     height: 1.25em;
     margin-right: 20px;
     vertical-align: middle;
+  }
+
+  .footer-mentions {
+    text-align: center;
+    margin-top: 2.5em;
+  }
+
+  .footer-algolia {
+    color: #86939e;
+    font-size: .875em;
+    margin-bottom: 1.25em;
+    display: inline-block;
+  }
+
+  .footer-algolia img {
+    height: 1.125em;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  .footer-algolia a {
+    text-decoration: underline;
+    color: #4c5155;
+  }
+
+  .footer-algolia a:hover {
+    color: #21cdb2;
+  }
+
+  .footer-disclaimer {
+    color: #86939e;
+    font-size: .9375em;
+    margin: 6.25em 0 10px;
   }
 
 }
