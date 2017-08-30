@@ -499,6 +499,14 @@ li img {
     padding: 0px 10px 52px 10px;
   }
 
+  .thousands-text {
+    font-size: 2em;
+  }
+
+  .images {
+    margin-top: 128px;
+  }
+
 
 }
 
