@@ -16,6 +16,11 @@ a:hover {
   text-decoration: none;
 }
 
+::selection {
+  background-color: #21cdb2;
+  color: #fff;
+}
+
 /* Header */
 
 .ad {
