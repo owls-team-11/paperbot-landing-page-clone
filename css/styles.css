@@ -421,13 +421,15 @@ a:hover {
 .footer-mentions {
   text-align: center;
   margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-algolia {
   color: #86939e;
   font-size: .875em;
   margin-bottom: 1.25em;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .footer-algolia img {
@@ -449,6 +451,7 @@ a:hover {
   color: #86939e;
   font-size: .9375em;
   margin: 6.25em 0 10px;
+  text-align: center;
 }
 
 /* min 481px */
@@ -554,20 +557,18 @@ a:hover {
      width: 17.375em;
     }
 
-  .footer-nav {
-    margin-bottom: -14px;
-  }
-
   .footer-mentions {
-    text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .second-footer {
-    float: right;
+    /* align-self: flex-end; */
+    /* text-align: right; */
   }
 
   .footer-disclaimer {
-    text-align: center;
     margin: 8.25em 0 10px;
   }
 
