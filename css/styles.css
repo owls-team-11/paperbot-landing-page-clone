@@ -154,6 +154,10 @@ a:hover {
   text-align: center;
 }
 
+.heineken {
+  display: none;
+}
+
 .images {
   display: flex;
   justify-content: space-around;
@@ -563,20 +567,15 @@ a:hover {
     justify-content: space-between;
   }
 
-  .second-footer {
-    /* align-self: flex-end; */
-    /* text-align: right; */
-  }
-
-  .footer-disclaimer {
-    margin: 8.25em 0 10px;
-  }
-
 }
 
-/* min 540px */
+/* min 600px */
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
+
+  .heineken {
+    display: inline;
+  }
 
 }
 
