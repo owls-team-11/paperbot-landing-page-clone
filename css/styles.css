@@ -206,7 +206,7 @@ a:hover {
   margin-bottom: .9375em;
 }
 
-li img {
+.list-how-it-works li img {
   margin-right: .5em;
   width: 1.5em;
   vertical-align: middle;
@@ -505,6 +505,23 @@ li img {
 
   .images {
     margin-top: 128px;
+  }
+
+  .how-it-works h2 {
+    font-size: 2em;
+  }
+
+  .list-how-it-works li {
+    font-size: 1.125em;
+  }
+
+  .list-how-it-works li img {
+    margin-right: 1em;
+    width: 2.125em;
+  }
+
+  .list-how-it-works li:last-child {
+    margin-bottom: 3px;
   }
 
 
