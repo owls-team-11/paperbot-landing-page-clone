@@ -532,6 +532,45 @@ a:hover {
     width: 70%;
   }
 
+  /* .product-features-container>div {
+    width: 100%;
+  }
+
+  .product-features-container>div:first-child {
+    margin-top: 0;
+  } */
+
+  .never-miss {
+    margin: 8.9em 0;
+  }
+
+  .cta-title {
+    font-size: 2.25em;
+    margin: .38462em 0 .19231em;
+  }
+
+  .call-to-action .btn-slack {
+     height: 5em;
+     width: 17.375em;
+    }
+
+  .footer-nav {
+    margin-bottom: -14px;
+  }
+
+  .footer-mentions {
+    text-align: left;
+  }
+
+  .second-footer {
+    float: right;
+  }
+
+  .footer-disclaimer {
+    text-align: center;
+    margin: 8.25em 0 10px;
+  }
+
 }
 
 /* min 540px */
