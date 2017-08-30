@@ -62,6 +62,10 @@ a:hover {
   height: 50px;
 }
 
+.navbar-links {
+  display: none;
+}
+
 .paperbot-logo {
   padding: 15px 10px;
 }
@@ -579,9 +583,29 @@ a:hover {
 
 }
 
-/* min 768px */
+/* min 617px */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 617px) {
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+  }
+
+  .navbar-links a {
+    color: #fff;
+    font-size: 14px;
+    margin: 15px;
+  }
+
+  .btn-slack-nav {
+    height: 40px;
+    width: 139px;
+    margin-top: -20px;
+  }
 
 }
 
