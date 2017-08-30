@@ -524,6 +524,13 @@ a:hover {
     margin-bottom: 3px;
   }
 
+  .text-testimonial h3 {
+    font-size: 1.375em;
+  }
+
+  .text-testimonial p {
+    width: 70%;
+  }
 
 }
 
