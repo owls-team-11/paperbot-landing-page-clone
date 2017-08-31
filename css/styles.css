@@ -53,8 +53,21 @@ a:hover {
 .navbar {
   background-color: #21cdb2;
   display: flex;
+  flex-direction: column;
+}
+
+.fr-container {
+  background-color: #21cdb2;
+  display: flex;
   justify-content: space-between;
   height: 50px;
+}
+
+.fc-container {
+  background-color: #21cdb2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .paperbot-logo {
