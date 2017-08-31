@@ -55,6 +55,12 @@ a:hover {
   text-decoration: none;
 }
 
+.ad-icon {
+  display: none;
+  margin-right: .3125em;
+  vertical-align: middle;
+}
+
 .navbar {
   background-color: #21cdb2;
   display: flex;
@@ -616,6 +622,20 @@ a:hover {
 /* min 768px */
 
 @media screen and (min-width: 768px) {
+
+  .ad-icon {
+    display: inline-block;
+  }
+
+  .ad {
+    font-size: 12px;
+    height: 3.35em;
+  }
+
+  .ad a>* {
+    font-size: .9375em;
+    margin: 0;
+  }
 
 }
 
