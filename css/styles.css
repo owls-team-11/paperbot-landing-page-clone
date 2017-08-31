@@ -577,10 +577,6 @@ a:hover {
     justify-content: space-between;
   }
 
-  .footer-mentions small:last-child {
-    color: red;
-  }
-
 }
 
 /* min 600px */
@@ -623,12 +619,15 @@ a:hover {
 
 @media screen and (min-width: 768px) {
 
+  body {
+    font-size: 12px;
+  }
+
   .ad-icon {
     display: inline-block;
   }
 
   .ad {
-    font-size: 12px;
     height: 3.35em;
   }
 
@@ -636,6 +635,29 @@ a:hover {
     font-size: .9375em;
     margin: 0;
   }
+
+  .thousands-text {
+    font-size: 2.16667em;
+  }
+
+  .description {
+    background-position-y: 17px;
+    padding-bottom: 0%;
+  }
+
+  .img-macbook {
+    top: 160px;
+  }
+
+  .container {
+    width: 740px;
+    padding: 0px 20px 52px 24px;
+  }
+
+  .headline {
+    max-width: 58%;
+  }
+
 
 }
 
