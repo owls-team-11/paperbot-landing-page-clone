@@ -16,6 +16,11 @@ a:hover {
   text-decoration: none;
 }
 
+::selection {
+  background-color: #21cdb2;
+  color: #fff;
+}
+
 /* Header */
 
 .ad {
@@ -35,19 +40,25 @@ a:hover {
 .ad p {
   color: #4c5155;
   display: inline-block;
-  font-size: 0.75em;
+  font-size: .75em;
   margin: 0;
 }
 
 .ad span {
   color: #21cdb2;
-  font-size: 0.75em;
+  font-size: .75em;
   font-weight: bold;
   text-decoration: #21cdb2 solid underline;
 }
 
 .ad span:hover {
   text-decoration: none;
+}
+
+.ad-icon {
+  display: none;
+  margin-right: .3125em;
+  vertical-align: middle;
 }
 
 .navbar {
@@ -69,6 +80,10 @@ a:hover {
   flex-direction: column;
   width: 100%;
 }
+
+/*.navbar-links {
+  display: none;
+}*/
 
 .paperbot-logo {
   padding: 15px 10px;
@@ -133,7 +148,7 @@ a:hover {
   font-size: 1.75em;
   font-weight: 300;
   line-height: 1.3;
-  margin: 0.67em 0;
+  margin: .67em 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
@@ -165,6 +180,10 @@ a:hover {
   font-size: 1.25em;
   font-weight: 400;
   text-align: center;
+}
+
+.heineken {
+  display: none;
 }
 
 .images {
@@ -226,7 +245,7 @@ a:hover {
   margin-bottom: .9375em;
 }
 
-li img {
+.list-how-it-works li img {
   margin-right: .5em;
   width: 1.5em;
   vertical-align: middle;
@@ -316,7 +335,7 @@ li img {
 }
 
 .product-features-container {
-  padding: 0 10px;
+  /* padding: 0 10px; */
   /* margin: 0 -10px; */
 }
 
@@ -457,13 +476,15 @@ li img {
 .footer-mentions {
   text-align: center;
   margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-algolia {
   color: #86939e;
   font-size: .875em;
   margin-bottom: 1.25em;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .footer-algolia img {
@@ -485,23 +506,199 @@ li img {
   color: #86939e;
   font-size: .9375em;
   margin: 6.25em 0 10px;
+  text-align: center;
 }
 
 /* min 481px */
 
 @media screen and (min-width: 481px) {
+  .ad p,
+  .ad span {
+    font-size: .9375em;
+  }
+
+  .navbar {
+    padding: 1em;
+  }
+
+  .headline {
+    text-align: left;
+    padding-top: 5em;
+    max-width: 50%;
+  }
+
+  .description h1 {
+    font-size: 2.375em;
+  }
+
+  .description p {
+    font-size: 1.375em;
+  }
+
+  .description {
+    background-position-y: 36px;
+  }
+
+  .btn-slack {
+    height: 80px;
+    width: 100%;
+    max-width: 278px;
+    vertical-align: middle;
+  }
+
+  .img-macbook {
+    max-width: 52%;
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+  }
+
+  .container {
+    padding: 0px 10px 52px 10px;
+  }
+
+  .thousands-text {
+    font-size: 2em;
+  }
+
+  .images {
+    margin-top: 128px;
+  }
+
+  .how-it-works h2 {
+    font-size: 2em;
+  }
+
+  .list-how-it-works li {
+    font-size: 1.125em;
+  }
+
+  .list-how-it-works li img {
+    margin-right: 1em;
+    width: 2.125em;
+  }
+
+  .list-how-it-works li:last-child {
+    margin-bottom: 3px;
+  }
+
+  .text-testimonial h3 {
+    font-size: 1.375em;
+  }
+
+  .text-testimonial p {
+    width: 70%;
+  }
+
+  /* .product-features-container>div {
+    width: 100%;
+  }
+
+  .product-features-container>div:first-child {
+    margin-top: 0;
+  } */
+
+  .never-miss {
+    margin: 8.9em 0;
+  }
+
+  .cta-title {
+    font-size: 2.25em;
+    margin: .38462em 0 .19231em;
+  }
+
+  .call-to-action .btn-slack {
+     height: 5em;
+     width: 17.375em;
+    }
+
+  .footer-mentions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
 }
 
-/* min 540px */
+/* min 600px */
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 600px) {
+
+  .heineken {
+    display: inline;
+  }
+
+}
+
+/* min 617px */
+
+@media screen and (min-width: 617px) {
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+  }
+
+  .navbar-links a {
+    color: #fff;
+    font-size: 14px;
+    margin: 15px;
+  }
+
+  .btn-slack-nav {
+    height: 40px;
+    width: 139px;
+    margin-top: -20px;
+  }
 
 }
 
 /* min 768px */
 
 @media screen and (min-width: 768px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  .ad-icon {
+    display: inline-block;
+  }
+
+  .ad {
+    height: 3.35em;
+  }
+
+  .ad a>* {
+    font-size: .9375em;
+    margin: 0;
+  }
+
+  .thousands-text {
+    font-size: 2.16667em;
+  }
+
+  .description {
+    background-position-y: 17px;
+    padding-bottom: 0%;
+  }
+
+  .img-macbook {
+    top: 160px;
+  }
+
+  .container {
+    width: 740px;
+    padding: 0px 20px 52px 24px;
+  }
+
+  .headline {
+    max-width: 58%;
+  }
+
 
 }
 
