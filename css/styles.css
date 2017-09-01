@@ -748,7 +748,6 @@ a:hover {
   }
 
   .container {
-    width: 740px;
     padding: 0px 20px 52px 24px;
   }
 
@@ -756,6 +755,32 @@ a:hover {
     max-width: 58%;
   }
 
+  .container-testimonials {
+    padding: 0 25px;
+    width: 718px;
+    margin: auto;
+  }
+
+  .testimonials {
+    margin-bottom: 6.25em;
+    display: flex;
+  }
+
+  .image-testimonial {
+    max-width: 41.66667%;
+    object-fit: contain;
+    /* flex-basis: 41.66667%; */
+  }
+
+  .text-testimonial {
+    max-width: 58.33333%;
+    /* flex-basis: 58.33333%; */
+  }
+
+
+  .iphone {
+    height: 188px;
+  }
 
 }
 
