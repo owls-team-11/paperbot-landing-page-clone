@@ -677,9 +677,33 @@ a:hover {
     display: block;
   }
 
-/*  .navigation li {
-    width: 20%;
-  }*/
+  .description {
+    position: relative;
+  }
+
+  .container {
+    max-width: 50%;
+  }
+
+  .img-container {
+    max-width: 50%;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+  }
+
+  .headline h1 {
+    font-size: 1.4em;
+  }
+
+  .headline p {
+    font-size: 1em;
+  }
+
+  .btn-slack {
+    margin-left: 50%;
+    margin-top: 10%;
+  }
 
   .heineken {
     display: inline;
@@ -687,27 +711,16 @@ a:hover {
 
 }
 
-/* min 617px */
+/*min   747 px - just to move slack button, otherwise it intersects with macbook image*/
 
-@media screen and (min-width: 617px) {
-
-  .navbar-toggle {
-    display: none;
+@media screen and (min-width: 747px) {
+  .btn-slack {
+    /*width: 135px;
+    height: 90px;*/
+    margin-left: 0%;
+    margin-top: -5%;
   }
-
-  .navbar-links {
-    display: flex;
   }
-
-  .navbar-links a {
-    color: #fff;
-    font-size: 14px;
-    margin: 15px;
-  }
-
-
-
-}
 
 /* min 768px */
 
@@ -749,7 +762,30 @@ a:hover {
   }
 
   .headline {
-    max-width: 58%;
+    /*max-width: 58%;*/
+  }
+
+  .headline h1 {
+    font-size: 2em;
+  }
+
+  .headline p {
+    font-size: 1.3em;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-container {
+    width: 50%;
+  }
+
+  .iphone {
+    width: 6em;
+    position: relative;
+    left: -18%;
   }
 
 
