@@ -471,6 +471,7 @@ a:hover {
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .footer-nav-item {
@@ -636,7 +637,7 @@ a:hover {
   } */
 
   .never-miss {
-    margin: 8.9em 0;
+    margin: 8.9em 0 6em;
   }
 
   .cta-title {
@@ -778,26 +779,30 @@ a:hover {
   .testimonials {
     display: flex;
     flex-direction: row;
+    /*align-items: center;*/
+    position: relative;
+    justify-content: space-around;
+  }
+
+  .image-testimonial, .text-testimonial {
+    align-self: flex-start;
+    max-width: 45%;
   }
 
   .testimonials:nth-child(4) {
     margin-bottom: 2.5em;
   }
 
-  .image-container {
-    width: 50%;
-    position: relative;
-  }
-
   .iphone {
+    align-self: flex-start;
     width: 6em;
     position: relative;
-    left: -18%;
+    left: -8%;
   }
 
   .links {
     position: absolute;
-    left: 49%;
+    left: 72.5%;
     top: 36%;
   }
 
@@ -822,6 +827,13 @@ a:hover {
   .never-miss .btn-slack {
     margin-top: 0%;
   }
+
+  .footer-nav-item {
+    max-width: 21%;
+
+  }
+
+  
 
 
 }
