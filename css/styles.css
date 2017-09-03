@@ -194,7 +194,8 @@ a:hover {
   opacity: .8;
 }
 
-.btn-slack {
+.btn-slack,
+.btn-slack-headline {
   height: 40px;
   width: 139px;
 }
@@ -580,7 +581,8 @@ a:hover {
     background-position-y: 36px;
   }
 
-  .btn-slack {
+  .btn-slack,
+  .btn-slack-headline {
     height: 80px;
     width: 100%;
     max-width: 278px;
@@ -691,7 +693,7 @@ a:hover {
     font-size: 1em;
   }
 
-  .btn-slack {
+  .btn-slack-headline {
     margin-left: 50%;
     margin-top: 10%;
   }
@@ -706,7 +708,7 @@ a:hover {
 image */
 
 @media screen and (min-width: 747px) {
-  .btn-slack {
+  .btn-slack-headline {
     /* width: 135px;
     height: 90px; */
     margin-left: 0%;
@@ -879,6 +881,10 @@ image */
 
   body {
     font-size: 16px;
+  }
+
+  .ad {
+    padding-bottom: 4px;
   }
 
   .container-testimonials {
