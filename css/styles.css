@@ -27,9 +27,6 @@ a:hover {
   display: flex;
   height: 3.75em;
   justify-content: center;
-}
-
-.ad {
   border-bottom: 1px solid #ccc;
 }
 
@@ -112,9 +109,9 @@ a:hover {
   font-size: 0.9em;
 }
 
-/*.navbar-links {
+/* .navbar-links {
   display: none;
-}*/
+} */
 
 .paperbot-logo {
   padding: 15px 10px;
@@ -140,11 +137,11 @@ a:hover {
   border-radius: 1px;
 }
 
-  .btn-slack-nav {
-    height: 40px;
-    width: 139px;
-    margin-top: 0px;
-  }
+.btn-slack-nav {
+  height: 40px;
+  width: 139px;
+  margin-top: 0px;
+}
 
 /* Description */
 
@@ -375,8 +372,6 @@ a:hover {
 .product-features-container {
   display: flex;
   flex-direction: column;
-  /* padding: 0 10px; */
-  /* margin: 0 -10px; */
 }
 
 .feature {
@@ -475,7 +470,6 @@ a:hover {
 }
 
 .footer-nav-item {
-  /* padding: 0 10px; */
   flex-basis: 50%;
   margin-top: 1.875em;
 }
@@ -525,7 +519,6 @@ a:hover {
   color: #86939e;
   font-size: .875em;
   margin-bottom: 1.25em;
-  /* display: inline-block; */
 }
 
 .footer-algolia img {
@@ -562,12 +555,6 @@ a:hover {
     padding: 1em;
   }
 
-
-
-  .headline {
-    
-  }
-
   .description h1 {
     font-size: 2.375em;
   }
@@ -585,10 +572,6 @@ a:hover {
     width: 100%;
     max-width: 278px;
     vertical-align: middle;
-  }
-
-  .img-macbook {
-    
   }
 
   .container {
@@ -627,14 +610,6 @@ a:hover {
   .text-testimonial p {
     width: 70%;
   }
-
-  /* .product-features-container>div {
-    width: 100%;
-  }
-
-  .product-features-container>div:first-child {
-    margin-top: 0;
-  } */
 
   .never-miss {
     margin: 8.9em 0 6em;
@@ -714,7 +689,8 @@ a:hover {
 
 }
 
-/*min   747 px - just to move slack button, otherwise it intersects with macbook image*/
+/* min 747 px - just to move slack button, otherwise it intersects with macbook
+image */
 
 @media screen and (min-width: 747px) {
   .btn-slack {
@@ -723,7 +699,8 @@ a:hover {
     margin-left: 0%;
     margin-top: -5%;
   }
-  }
+
+}
 
 /* min 768px */
 
@@ -741,9 +718,13 @@ a:hover {
     height: 3.35em;
   }
 
-  .ad a>* {
+  .ad a > * {
     font-size: .9375em;
     margin: 0;
+  }
+
+  .navigation a {
+    font-size: 14px;
   }
 
   .thousands-text {
@@ -765,7 +746,7 @@ a:hover {
   }
 
   .headline {
-    /*max-width: 58%;*/
+    /* max-width: 58%; */
   }
 
   .headline h1 {
@@ -776,17 +757,30 @@ a:hover {
     font-size: 1.3em;
   }
 
+  .container-testimonials {
+    width: 718px;
+    padding: 0 25px;
+    margin: auto;
+  }
+
   .testimonials {
     display: flex;
     flex-direction: row;
-    /*align-items: center;*/
+    align-items: flex-start;
     position: relative;
     justify-content: space-around;
   }
 
-  .image-testimonial, .text-testimonial {
-    align-self: flex-start;
-    max-width: 45%;
+  .order-first {
+    order: -1;
+  }
+
+  .image-testimonial {
+    max-width: 41.66667%;
+  }
+
+  .text-testimonial {
+    max-width: 58.33333%;
   }
 
   .testimonials:nth-child(4) {
@@ -794,7 +788,6 @@ a:hover {
   }
 
   .iphone {
-    align-self: flex-start;
     width: 6em;
     position: relative;
     left: -8%;
@@ -802,7 +795,7 @@ a:hover {
 
   .links {
     position: absolute;
-    left: 72.5%;
+    left: 76.5%;
     top: 36%;
   }
 
@@ -810,14 +803,17 @@ a:hover {
     top: 16%;
   }
 
-  .product-features-container{
+  .product-features-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 718px;
+    margin: 0 auto 50px;
   }
 
   .feature {
-    max-width: 40%;
+    max-width: 39%;
+    padding: 10px 41px;
   }
 
   .product-features-title {
@@ -828,13 +824,34 @@ a:hover {
     margin-top: 0%;
   }
 
-  .footer-nav-item {
-    max-width: 21%;
-
+  .never-miss {
+    margin: 11.7em 0 6em;
   }
 
-  
+  .call-to-action {
+    padding: 37px 185px;
+  }
 
+  .footer-nav-item {
+    max-width: 21%;
+  }
+
+  .footer {
+    width: 718px;
+    margin: auto;
+  }
+
+  .first-footer {
+    margin-left: 15px;
+  }
+
+  .footer-nav-title {
+    margin-bottom: 45px;
+  }
+
+  .feature p {
+    margin: 0 0 -25px;
+  }
 
 }
 
