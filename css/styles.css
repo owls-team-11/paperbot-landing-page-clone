@@ -770,10 +770,10 @@ image */
   }
 
   .list-container {
-  margin-top: -36px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
+    margin-top: -36px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   .container-testimonials {
     width: 718px;
@@ -877,6 +877,34 @@ image */
 
 @media screen and (min-width: 992px) {
 
+  body {
+    font-size: 16px;
+  }
+
+  .container-testimonials {
+    width: 938px;
+  }
+
+  .product-features-container {
+    width: 938px;
+  }
+
+  .footer {
+    width: 938px;
+  }
+
+  .call-to-action {
+    padding: 37px 263px;
+  }
+
+}
+
+/* min 1057px */
+
+@media screen and (min-width: 1057px) {
+
+  .call-to-action {
+    padding: 37px 321px;
 }
 
 /* min 1200px */
