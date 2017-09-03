@@ -492,6 +492,7 @@ a:hover {
   color: #86939e;
   font-size: 16px;
   line-height: 1.56;
+  transition: all .5s ease-in-out;
 }
 
 .footer-list li {
@@ -502,10 +503,22 @@ a:hover {
   margin-top: 0;
 }
 
+.footer-list li a:hover {
+  opacity: .5;
+}
+
 .footer-nav-item img {
   height: 1.25em;
   margin-right: 20px;
   vertical-align: middle;
+}
+
+.footer-nav-item img {
+  transition: all .5s ease-in-out;
+}
+
+.footer-nav-item img:hover {
+  opacity: .5;
 }
 
 .footer-mentions {
