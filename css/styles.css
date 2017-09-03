@@ -27,9 +27,6 @@ a:hover {
   display: flex;
   height: 3.75em;
   justify-content: center;
-}
-
-.ad {
   border-bottom: 1px solid #ccc;
 }
 
@@ -112,9 +109,9 @@ a:hover {
   font-size: 0.9em;
 }
 
-/*.navbar-links {
+/* .navbar-links {
   display: none;
-}*/
+} */
 
 .paperbot-logo {
   padding: 15px 10px;
@@ -124,6 +121,7 @@ a:hover {
   background-color: transparent;
   border-width: 0;
   margin-right: 15px;
+  outline: none;
 }
 
 .navbar-toggle .icon-bar+.icon-bar {
@@ -139,11 +137,11 @@ a:hover {
   border-radius: 1px;
 }
 
-  .btn-slack-nav {
-    height: 40px;
-    width: 139px;
-    margin-top: 0px;
-  }
+.btn-slack-nav {
+  height: 40px;
+  width: 139px;
+  margin-top: 0px;
+}
 
 /* Description */
 
@@ -372,8 +370,8 @@ a:hover {
 }
 
 .product-features-container {
-  /* padding: 0 10px; */
-  /* margin: 0 -10px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .feature {
@@ -468,10 +466,10 @@ a:hover {
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .footer-nav-item {
-  /* padding: 0 10px; */
   flex-basis: 50%;
   margin-top: 1.875em;
 }
@@ -521,7 +519,6 @@ a:hover {
   color: #86939e;
   font-size: .875em;
   margin-bottom: 1.25em;
-  /* display: inline-block; */
 }
 
 .footer-algolia img {
@@ -558,14 +555,6 @@ a:hover {
     padding: 1em;
   }
 
-
-
-  .headline {
-    text-align: left;
-    padding-top: 5em;
-    max-width: 50%;
-  }
-
   .description h1 {
     font-size: 2.375em;
   }
@@ -583,13 +572,6 @@ a:hover {
     width: 100%;
     max-width: 278px;
     vertical-align: middle;
-  }
-
-  .img-macbook {
-    max-width: 52%;
-    position: absolute;
-    right: 0;
-    margin-top: 0;
   }
 
   .container {
@@ -629,16 +611,8 @@ a:hover {
     width: 70%;
   }
 
-  /* .product-features-container>div {
-    width: 100%;
-  }
-
-  .product-features-container>div:first-child {
-    margin-top: 0;
-  } */
-
   .never-miss {
-    margin: 8.9em 0;
+    margin: 8.9em 0 6em;
   }
 
   .cta-title {
@@ -681,9 +655,33 @@ a:hover {
     display: block;
   }
 
-/*  .navigation li {
-    width: 20%;
-  }*/
+  .description {
+    position: relative;
+  }
+
+  .container {
+    max-width: 50%;
+  }
+
+  .img-container {
+    max-width: 50%;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+  }
+
+  .headline h1 {
+    font-size: 1.4em;
+  }
+
+  .headline p {
+    font-size: 1em;
+  }
+
+  .btn-slack {
+    margin-left: 50%;
+    margin-top: 10%;
+  }
 
   .heineken {
     display: inline;
@@ -691,25 +689,16 @@ a:hover {
 
 }
 
-/* min 617px */
+/* min 747 px - just to move slack button, otherwise it intersects with macbook
+image */
 
-@media screen and (min-width: 617px) {
-
-  .navbar-toggle {
-    display: none;
+@media screen and (min-width: 747px) {
+  .btn-slack {
+    /*width: 135px;
+    height: 90px;*/
+    margin-left: 0%;
+    margin-top: -5%;
   }
-
-  .navbar-links {
-    display: flex;
-  }
-
-  .navbar-links a {
-    color: #fff;
-    font-size: 14px;
-    margin: 15px;
-  }
-
-
 
 }
 
@@ -729,9 +718,13 @@ a:hover {
     height: 3.35em;
   }
 
-  .ad a>* {
+  .ad a > * {
     font-size: .9375em;
     margin: 0;
+  }
+
+  .navigation a {
+    font-size: 14px;
   }
 
   .thousands-text {
@@ -752,34 +745,111 @@ a:hover {
   }
 
   .headline {
-    max-width: 58%;
+    /* max-width: 58%; */
+  }
+
+  .headline h1 {
+    font-size: 2em;
+  }
+
+  .headline p {
+    font-size: 1.3em;
   }
 
   .container-testimonials {
-    padding: 0 25px;
     width: 718px;
+    padding: 0 25px;
     margin: auto;
   }
 
   .testimonials {
-    margin-bottom: 6.25em;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    justify-content: space-around;
+  }
+
+  .order-first {
+    order: -1;
   }
 
   .image-testimonial {
     max-width: 41.66667%;
-    object-fit: contain;
-    /* flex-basis: 41.66667%; */
   }
 
   .text-testimonial {
     max-width: 58.33333%;
-    /* flex-basis: 58.33333%; */
   }
 
+  .testimonials:nth-child(4) {
+    margin-bottom: 2.5em;
+  }
 
   .iphone {
-    height: 188px;
+    width: 6em;
+    position: relative;
+    left: -8%;
+  }
+
+  .links {
+    position: absolute;
+    left: 76.5%;
+    top: 36%;
+  }
+
+  .ios {
+    top: 16%;
+  }
+
+  .product-features-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 718px;
+    margin: 0 auto 50px;
+  }
+
+  .feature {
+    max-width: 39%;
+    padding: 10px 41px;
+  }
+
+  .product-features-title {
+    margin-bottom: 0;
+  }
+
+  .never-miss .btn-slack {
+    margin-top: 0%;
+  }
+
+  .never-miss {
+    margin: 11.7em 0 6em;
+  }
+
+  .call-to-action {
+    padding: 37px 185px;
+  }
+
+  .footer-nav-item {
+    max-width: 21%;
+  }
+
+  .footer {
+    width: 718px;
+    margin: auto;
+  }
+
+  .first-footer {
+    margin-left: 15px;
+  }
+
+  .footer-nav-title {
+    margin-bottom: 45px;
+  }
+
+  .feature p {
+    margin: 0 0 -25px;
   }
 
 }
