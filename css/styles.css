@@ -161,7 +161,7 @@ a:hover {
   content: "";
   background-color: #21cdb2;
   display: block;
-  height: 37px;
+  height: 55px;
   transform: skewY(2.65deg);
   transform-origin: 0%;
   z-index: -100;
@@ -239,13 +239,13 @@ a:hover {
   background-color: #f0f3f5;
   content: "";
   display: block;
-  height: 37px;
+  height: 55px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
   z-index: -100;
   position: relative;
-  top: -37px;
+  top: -55px;
 }
 
 .how-it-works {
@@ -290,7 +290,7 @@ a:hover {
   background-color: #f0f3f5;
   content: "";
   display: block;
-  height: 37px;
+  height: 55px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
@@ -415,7 +415,7 @@ a:hover {
   background-color: #7a7a7a;
   content: "";
   display: block;
-  height: 37px;
+  height: 55px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
@@ -448,13 +448,13 @@ a:hover {
   background-color: #7a7a7a;
   content: "";
   display: block;
-  height: 37px;
+  height: 55px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
   z-index: -100;
   position: relative;
-  top: -37px;
+  top: -55px;
 }
 
 /* Footer */
@@ -707,8 +707,8 @@ image */
 
 @media screen and (min-width: 747px) {
   .btn-slack {
-    /*width: 135px;
-    height: 90px;*/
+    /* width: 135px;
+    height: 90px; */
     margin-left: 0%;
     margin-top: -5%;
   }
@@ -768,6 +768,12 @@ image */
   .headline p {
     font-size: 1.3em;
   }
+
+  .list-container {
+  margin-top: -36px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
   .container-testimonials {
     width: 718px;
