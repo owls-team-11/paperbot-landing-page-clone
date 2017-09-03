@@ -218,7 +218,9 @@ a:hover {
   text-align: center;
 }
 
-.heineken {
+.heineken,
+.hubspot,
+.paypal {
   display: none;
 }
 
@@ -905,12 +907,25 @@ image */
 
 }
 
+/* min 1000px */
+
+@media screen and (min-width: 1000px) {
+
+  .hubspot,
+  .paypal {
+    display: inline;
+  }
+
+}
+
 /* min 1057px */
 
 @media screen and (min-width: 1057px) {
 
   .call-to-action {
     padding: 37px 321px;
+  }
+
 }
 
 /* min 1200px */
