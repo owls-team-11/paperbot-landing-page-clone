@@ -161,7 +161,7 @@ a:hover {
   content: "";
   background-color: #21cdb2;
   display: block;
-  height: 56px;
+  height: 90px;
   transform: skewY(2.65deg);
   transform-origin: 0%;
   z-index: -100;
@@ -242,13 +242,13 @@ a:hover {
   background-color: #f0f3f5;
   content: "";
   display: block;
-  height: 56px;
+  height: 90px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
   z-index: -100;
   position: relative;
-  top: -56px;
+  top: -90px;
 }
 
 .how-it-works {
@@ -293,7 +293,7 @@ a:hover {
   background-color: #f0f3f5;
   content: "";
   display: block;
-  height: 56px;
+  height: 90px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
@@ -418,7 +418,7 @@ a:hover {
   background-color: #7a7a7a;
   content: "";
   display: block;
-  height: 56px;
+  height: 90px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
@@ -451,13 +451,13 @@ a:hover {
   background-color: #7a7a7a;
   content: "";
   display: block;
-  height: 56px;
+  height: 90px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
   z-index: -100;
   position: relative;
-  top: -56px;
+  top: -90px;
 }
 
 /* Footer */
@@ -628,6 +628,10 @@ a:hover {
     width: 70%;
   }
 
+  .iphone {
+    width: 6.25em
+  }
+
   .never-miss {
     margin: 8.9em 0 6em;
   }
@@ -759,10 +763,6 @@ image */
 
   .container {
     padding: 0px 20px 52px 24px;
-  }
-
-  .headline {
-    /* max-width: 58%; */
   }
 
   .headline h1 {
@@ -958,10 +958,6 @@ image */
 
   .feature {
     padding: 10px 59px;
-  }
-
-  .how-it-works::after {
-    height: 71px;
   }
 
   .how-it-works h2 {
