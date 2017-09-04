@@ -27,9 +27,6 @@ a:hover {
   display: flex;
   height: 3.75em;
   justify-content: center;
-}
-
-.ad {
   border-bottom: 1px solid #ccc;
 }
 
@@ -113,10 +110,6 @@ a:hover {
   font-size: 0.9em;
 }
 
-/*.navbar-links {
-  display: none;
-}*/
-
 .paperbot-logo {
   padding: 15px 10px;
 }
@@ -141,11 +134,11 @@ a:hover {
   border-radius: 1px;
 }
 
-  .btn-slack-nav {
-    height: 40px;
-    width: 139px;
-    margin-top: 0px;
-  }
+.btn-slack-nav {
+  height: 40px;
+  width: 139px;
+  margin-top: 0px;
+}
 
 /* Description */
 
@@ -165,7 +158,7 @@ a:hover {
   content: "";
   background-color: #21cdb2;
   display: block;
-  height: 37px;
+  height: 90px;
   transform: skewY(2.65deg);
   transform-origin: 0%;
   z-index: -100;
@@ -198,7 +191,8 @@ a:hover {
   opacity: .8;
 }
 
-.btn-slack {
+.btn-slack,
+.btn-slack-headline {
   height: 40px;
   width: 139px;
 }
@@ -211,7 +205,8 @@ a:hover {
 /* Client list */
 
 .client-list {
-  margin-top: 70px;
+  margin-top: 44px;
+  margin-bottom: 253px;
 }
 
 .thousands-text {
@@ -221,15 +216,19 @@ a:hover {
   text-align: center;
 }
 
-.heineken {
+.heineken,
+.hubspot,
+.paypal {
   display: none;
 }
 
 .images {
   display: flex;
   justify-content: space-around;
-  margin-top: 82px;
+  margin: 82px auto 0;
+  max-width: 1180px;
   padding: 0 10px;
+
 }
 
 .client-img {
@@ -243,13 +242,13 @@ a:hover {
   background-color: #f0f3f5;
   content: "";
   display: block;
-  height: 37px;
+  height: 91px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
   z-index: -100;
   position: relative;
-  top: -37px;
+  top: -90px;
 }
 
 .how-it-works {
@@ -267,9 +266,10 @@ a:hover {
 }
 
 .list-container {
-  margin-top: -27px;
-  padding-top: 72px;
-  padding-bottom: 76px;
+  margin-top: -80px;
+  padding: 0;
+  /* padding-top: 72px; */
+  /* padding-bottom: 76px; */
 }
 
 .list-how-it-works {
@@ -294,7 +294,7 @@ a:hover {
   background-color: #f0f3f5;
   content: "";
   display: block;
-  height: 37px;
+  height: 90px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
@@ -376,8 +376,6 @@ a:hover {
 .product-features-container {
   display: flex;
   flex-direction: column;
-  /* padding: 0 10px; */
-  /* margin: 0 -10px; */
 }
 
 .feature {
@@ -421,7 +419,7 @@ a:hover {
   background-color: #7a7a7a;
   content: "";
   display: block;
-  height: 37px;
+  height: 90px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
@@ -454,13 +452,13 @@ a:hover {
   background-color: #7a7a7a;
   content: "";
   display: block;
-  height: 37px;
+  height: 90px;
   width: 100%;
   transform: skewY(2.65deg);
   transform-origin: 0%;
   z-index: -100;
   position: relative;
-  top: -37px;
+  top: -90px;
 }
 
 /* Footer */
@@ -476,7 +474,6 @@ a:hover {
 }
 
 .footer-nav-item {
-  /* padding: 0 10px; */
   flex-basis: 50%;
   margin-top: 1.875em;
 }
@@ -499,6 +496,7 @@ a:hover {
   color: #86939e;
   font-size: 16px;
   line-height: 1.56;
+  transition: all .5s ease-in-out;
 }
 
 .footer-list li {
@@ -509,10 +507,22 @@ a:hover {
   margin-top: 0;
 }
 
+.footer-list li a:hover {
+  opacity: .5;
+}
+
 .footer-nav-item img {
   height: 1.25em;
   margin-right: 20px;
   vertical-align: middle;
+}
+
+.footer-nav-item img {
+  transition: all .5s ease-in-out;
+}
+
+.footer-nav-item img:hover {
+  opacity: .5;
 }
 
 .footer-mentions {
@@ -526,7 +536,6 @@ a:hover {
   color: #86939e;
   font-size: .875em;
   margin-bottom: 1.25em;
-  /* display: inline-block; */
 }
 
 .footer-algolia img {
@@ -563,12 +572,6 @@ a:hover {
     padding: 1em;
   }
 
-
-
-  .headline {
-    
-  }
-
   .description h1 {
     font-size: 2.375em;
   }
@@ -581,15 +584,12 @@ a:hover {
     background-position-y: 36px;
   }
 
-  .btn-slack {
+  .btn-slack,
+  .btn-slack-headline {
     height: 80px;
     width: 100%;
     max-width: 278px;
     vertical-align: middle;
-  }
-
-  .img-macbook {
-    
   }
 
   .container {
@@ -629,13 +629,9 @@ a:hover {
     width: 70%;
   }
 
-  /* .product-features-container>div {
-    width: 100%;
+  .iphone {
+    width: 6.25em
   }
-
-  .product-features-container>div:first-child {
-    margin-top: 0;
-  } */
 
   .never-miss {
     margin: 8.9em 0 6em;
@@ -686,6 +682,14 @@ a:hover {
     position: relative;
   }
 
+  .client-list {
+    margin-top: 56px;
+  }
+
+  .call-to-action {
+    margin-top: -61px;
+  }
+
   .container {
     max-width: 50%;
   }
@@ -705,7 +709,7 @@ a:hover {
     font-size: 1em;
   }
 
-  .btn-slack {
+  .btn-slack-headline {
     margin-left: 50%;
     margin-top: 10%;
   }
@@ -716,16 +720,18 @@ a:hover {
 
 }
 
-/*min   747 px - just to move slack button, otherwise it intersects with macbook image*/
+/* min 747 px - just to move slack button, otherwise it intersects with macbook
+image */
 
 @media screen and (min-width: 747px) {
-  .btn-slack {
-    /*width: 135px;
-    height: 90px;*/
+  .btn-slack-headline {
+    /* width: 135px;
+    height: 90px; */
     margin-left: 0%;
     margin-top: -5%;
   }
-  }
+
+}
 
 /* min 768px */
 
@@ -743,9 +749,13 @@ a:hover {
     height: 3.35em;
   }
 
-  .ad a>* {
+  .ad a > * {
     font-size: .9375em;
     margin: 0;
+  }
+
+  .navigation a {
+    font-size: 14px;
   }
 
   .thousands-text {
@@ -766,12 +776,7 @@ a:hover {
   }
 
   .container {
-    width: 740px;
     padding: 0px 20px 52px 24px;
-  }
-
-  .headline {
-    /*max-width: 58%;*/
   }
 
   .headline h1 {
@@ -782,17 +787,48 @@ a:hover {
     font-size: 1.3em;
   }
 
+  .client-list {
+    margin-top: 70px;
+  }
+
+  .how-it-works {
+    margin-top: -65px;
+  }
+
+  .how-it-works::after {
+    height: 56px;
+  }
+
+  .list-container {
+    margin-top: -109px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .container-testimonials {
+    width: 718px;
+    padding: 0 25px;
+    margin: auto;
+  }
+
   .testimonials {
     display: flex;
     flex-direction: row;
-    /*align-items: center;*/
+    align-items: flex-start;
     position: relative;
     justify-content: space-around;
   }
 
-  .image-testimonial, .text-testimonial {
-    align-self: flex-start;
-    max-width: 45%;
+  .order-first {
+    order: -1;
+  }
+
+  .image-testimonial {
+    max-width: 41.66667%;
+  }
+
+  .text-testimonial {
+    max-width: 58.33333%;
   }
 
   .testimonials:nth-child(4) {
@@ -800,7 +836,6 @@ a:hover {
   }
 
   .iphone {
-    align-self: flex-start;
     width: 6em;
     position: relative;
     left: -8%;
@@ -808,7 +843,7 @@ a:hover {
 
   .links {
     position: absolute;
-    left: 72.5%;
+    left: 76.5%;
     top: 36%;
   }
 
@@ -816,14 +851,17 @@ a:hover {
     top: 16%;
   }
 
-  .product-features-container{
+  .product-features-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 718px;
+    margin: 0 auto 50px;
   }
 
   .feature {
-    max-width: 40%;
+    max-width: 39%;
+    padding: 10px 41px;
   }
 
   .product-features-title {
@@ -834,13 +872,34 @@ a:hover {
     margin-top: 0%;
   }
 
-  .footer-nav-item {
-    max-width: 21%;
-
+  .never-miss {
+    margin: 11.7em 0 0;
   }
 
-  
+  .call-to-action {
+    padding: 37px 185px;
+  }
 
+  .footer-nav-item {
+    max-width: 21%;
+  }
+
+  .footer {
+    width: 718px;
+    margin: auto;
+  }
+
+  .first-footer {
+    margin-left: 15px;
+  }
+
+  .footer-nav-title {
+    margin-bottom: 45px;
+  }
+
+  .feature p {
+    margin: 0 0 -25px;
+  }
 
 }
 
@@ -848,10 +907,151 @@ a:hover {
 
 @media screen and (min-width: 992px) {
 
+  body {
+    font-size: 16px;
+  }
+
+  .ad {
+    padding-bottom: 4px;
+  }
+
+  .client-list {
+    margin-top: 90px;
+    margin-bottom: 292px;
+  }
+
+  .how-it-works {
+    margin-bottom: 158px;
+  }
+
+  .how-it-works::before {
+    height: 106px;
+  }
+
+  .how-it-works::after {
+    height: 77px;
+  }
+
+  .container-testimonials {
+    width: 938px;
+  }
+
+  .product-features-container {
+    width: 938px;
+  }
+
+  .footer {
+    width: 938px;
+  }
+
+  .never-miss {
+    margin: 11.7em 0 2.3em;
+  }
+
+  .never-miss::before {
+    height: 118px;
+  }
+
+  .call-to-action {
+    padding: 37px 263px;
+  }
+
+}
+
+/* min 1000px */
+
+@media screen and (min-width: 1000px) {
+
+  .hubspot,
+  .paypal {
+    display: inline;
+  }
+
+}
+
+/* min 1057px */
+
+@media screen and (min-width: 1057px) {
+
+  .call-to-action {
+    padding: 37px 321px;
+  }
+
 }
 
 /* min 1200px */
 
 @media screen and (min-width: 1200px) {
+
+  .description::after {
+    height: 260px;
+  }
+
+  .btn-slack-headline {
+    margin-top: 0%;
+  }
+
+  .client-list {
+    margin-top: 103px;
+    margin-bottom: 346px;
+  }
+
+  .container-testimonials {
+    width: 1138px;
+  }
+
+  .product-features-container {
+    width: 1138px;
+  }
+
+  .footer {
+    width: 1138px;
+  }
+
+  .iphone {
+    left: -3%;
+  }
+
+  .feature {
+    padding: 10px 59px;
+  }
+
+  .how-it-works h2 {
+    margin-top: 42px;
+  }
+
+  .how-it-works {
+    margin-bottom: 197px;
+  }
+
+  .how-it-works::after {
+    height: 90px;
+  }
+
+  .list-container {
+    margin-bottom: -63px;
+  }
+
+  .never-miss::before {
+    height: 130px;
+  }
+
+  .never-miss::after {
+    height: 100px;
+  }
+
+  .call-to-action {
+    padding: 0 321px;
+  }
+
+}
+
+/* min 1500px */
+
+@media screen and (min-width: 1500px) {
+
+  .client-list {
+    margin-top: 164px;
+  }
 
 }
