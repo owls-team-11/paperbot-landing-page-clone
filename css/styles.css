@@ -208,7 +208,8 @@ a:hover {
 /* Client list */
 
 .client-list {
-  margin-top: 70px;
+  margin-top: 44px;
+  margin-bottom: 253px;
 }
 
 .thousands-text {
@@ -266,9 +267,10 @@ a:hover {
 }
 
 .list-container {
-  margin-top: -27px;
-  padding-top: 72px;
-  padding-bottom: 76px;
+  margin-top: -80px;
+  padding: 0;
+  /* padding-top: 72px; */
+  /* padding-bottom: 76px; */
 }
 
 .list-how-it-works {
