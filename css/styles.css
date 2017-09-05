@@ -79,7 +79,6 @@ a:hover {
 }
 
 .navigation {
-  /*background-color: #21cdb2;*/
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -233,8 +232,6 @@ a:hover {
 }
 
 .client-img {
-  /* max-height: 36px;
-  max-width: 46%; */
   width: auto !important;
   max-width: 100%;
   height: 36px;
@@ -273,8 +270,6 @@ a:hover {
 .list-container {
   margin-top: -80px;
   padding: 0;
-  /* padding-top: 72px; */
-  /* padding-bottom: 76px; */
 }
 
 .list-how-it-works {
