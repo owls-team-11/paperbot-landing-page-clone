@@ -206,7 +206,7 @@ a:hover {
 .client-list {
   margin-top: 44px;
   margin-bottom: 253px;
-  padding: 0 54px;
+  padding: 0 54px 0 44px;
 }
 
 .thousands-text {
@@ -214,6 +214,8 @@ a:hover {
   font-size: 1.25em;
   font-weight: 400;
   text-align: center;
+  position: relative
+  left: 10px;
 }
 
 .heineken,
@@ -225,7 +227,7 @@ a:hover {
 .images {
   display: flex;
   justify-content: space-around;
-  margin: 82px auto 0 -10px;
+  margin: 82px auto 0;
   max-width: 1180px;
   padding: 0 10px;
 }
