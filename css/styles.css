@@ -225,10 +225,9 @@ a:hover {
 .images {
   display: flex;
   justify-content: space-around;
-  margin: 82px auto 0;
+  margin: 82px auto 0 -10px;
   max-width: 1180px;
   padding: 0 10px;
-
 }
 
 .client-img {
