@@ -2,9 +2,12 @@ $(document).ready(function () {
 
   var clientsList = [
   "accenture.8dc20d.svg",
+  "buffer.png",
+  "giphy.png",
+  "paypal.png",
+  "adobe.png",
   "audi.777305.png",
   "catchafire.949e5b.png",
-  "ge.56b983.png",
   "hbo.3457d6.svg",
   "heineken.7269fa.png",
   "hootsuite.674c6e.png",
@@ -17,7 +20,6 @@ $(document).ready(function () {
   "telefonica.8ce3e1.png",
   "tnw.ecc6cf.png",
   "vodafone.6ecbb7.png",
-  "volkswage.0f3dea.png",
   "walmart.cd2afc.png",
   "wayra.26a0a8.png"
   ];

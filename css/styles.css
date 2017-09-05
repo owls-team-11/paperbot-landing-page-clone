@@ -214,14 +214,8 @@ a:hover {
   font-size: 1.25em;
   font-weight: 400;
   text-align: center;
-  position: relative
+  position: relative;
   left: 10px;
-}
-
-.heineken,
-.hubspot,
-.paypal {
-  display: none;
 }
 
 .images {
@@ -238,6 +232,16 @@ a:hover {
   height: 36px;
   margin: 0 auto;
 }
+
+.round-logo {
+  height: 65px;
+  /* position: relative; */
+  /* bottom: 15px; */
+}
+
+/* .owl-stage {
+  height: 200px;
+} */
 
 /* How it works */
 
