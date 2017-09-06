@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
   var clientsList = [
-  "accenture.8dc20d.svg",
-  "buffer.png",
   "giphy.png",
   "paypal.png",
   "adobe.png",
