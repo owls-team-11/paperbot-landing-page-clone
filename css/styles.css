@@ -219,8 +219,6 @@ a:hover {
 }
 
 .images {
-  display: flex;
-  justify-content: space-around;
   margin: 82px auto 0;
   max-width: 1180px;
   padding: 0 10px;
@@ -233,15 +231,14 @@ a:hover {
   margin: 0 auto;
 }
 
-.round-logo {
-  height: 65px;
-  /* position: relative; */
-  /* bottom: 15px; */
+.owl-stage {
+  display: flex;
+  align-items: center;
 }
 
-/* .owl-stage {
-  height: 200px;
-} */
+.round-logo {
+  height: 65px;
+}
 
 /* How it works */
 
