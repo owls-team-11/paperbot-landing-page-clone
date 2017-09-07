@@ -206,7 +206,7 @@ a:hover {
 .client-list {
   margin-top: 44px;
   margin-bottom: 253px;
-  padding: 0 54px 0 44px;
+  padding: 0 20px 0 0;
 }
 
 .thousands-text {
@@ -596,6 +596,10 @@ a:hover {
 
   .container {
     padding: 0px 10px 52px 10px;
+  }
+
+  .client-list {
+    padding: 0 54px 0 44px;
   }
 
   .thousands-text {
